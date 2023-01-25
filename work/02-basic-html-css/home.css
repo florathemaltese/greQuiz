@@ -1,0 +1,5 @@
+.cat-list {
+    border: 2px solid deeppink;
+    padding: 10px;
+    list-style-type: "\1F431";
+}

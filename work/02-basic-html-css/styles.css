@@ -1,0 +1,17 @@
+header, footer {
+    background-color: #FAEBD7;
+}
+main {
+    background-color: #FFFFF0;
+}
+.header-container1 {
+    display: flex;
+    align-items: center;
+}
+.header-container2 {
+    display: flex;
+    align-items: center;
+}
+header, main, footer {
+    color: #000000;
+}
