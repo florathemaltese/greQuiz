@@ -1,4 +1,13 @@
-main p::first-letter {
-    font-size: 150%;
-    line-height: 1.6;
+header, footer {
+    background-color: #ffa600;
+}
+main {
+    background-color: #f0f0f0;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+header, main, footer {
+    color: #000000;
 }
