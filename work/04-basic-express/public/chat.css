@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+header{
+  background-color: #FAEBD7;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1em;
+}
+
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+#chat-app {
+  display: grid;
+  grid-template-areas: "users messages" "outgoing outgoing";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr auto;
+  height: 100%;
+}
+
+.users,
+.messages {
+  padding: 1rem;
+  margin: 0;
+  overflow-y: auto;
+  list-style-type: none;
+  background-color: white;
+}
+
+.users {
+  grid-area: users;
+}
+
+.messages {
+  grid-area: messages;
+}
+
+.avatar {
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.username {
+  margin: auto 1rem;
+  color: blue;
+  font-weight: bold;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.sender-info {
+  display: flex;
+  width: 10rem;
+}
+
+.message-text {
+  width: 100%;
+  margin: 0;
+  margin-top: auto;
+  padding: 0.5rem;
+  background-color: blue;
+  color: white;
+  border-radius: 1rem;
+}
+
+.outgoing {
+  grid-area: outgoing;
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  width: 100%;
+}
+
+input[type="submit"] {
+  padding: 0.5rem 1rem;
+  background-color: blue;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
