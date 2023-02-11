@@ -16,6 +16,7 @@ app.get('/', (req, res) => {
 app.post('/chat', express.urlencoded({ extended: false }), (req, res) => {
   const { text } = req.body; // You'll need to add something!
   // Fill in here!
+  chat.addMessage({sender:"Amit",text});
   res.redirect('/');
 });
 
