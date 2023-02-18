@@ -1,0 +1,21 @@
+{
+    "name": "express-login",
+    "version": "1.0.0",
+    "description": "A site that performs login, keeps information for each user, and allows a logout",
+    "main": "index.js",
+    "dependencies": {
+        "cookie-parser": "^1.4.6",
+        "express": "^4.17.1",
+        "uuid": "^8.3.0"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "keywords": [
+        "login",
+        "logout",
+        "user information"
+    ],
+    "author": "",
+    "license": "ISC"
+}
