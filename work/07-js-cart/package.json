@@ -1,0 +1,23 @@
+{
+  "name": "assignment7",
+  "version": "1.0.0",
+  "description": "JS cart",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
