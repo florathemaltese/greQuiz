@@ -1,0 +1,28 @@
+{
+  "name": "project2",
+  "version": "1.0.0",
+  "description": "* start from the up-to-date main branch (`git checkout main; git pull origin main`)\r * Create a feature branch named 'project2' (`git checkout -b project2`)\r * Create the files in this directory to have the require features\r * Add, commit, and push the branch to github\r * Create a PR to merge to main\r * Be sure to include the TA(s) and I as reviewers.  \r * Due by **Sun Mar 19, 11:59pm (PT)**",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "start": "npm run build && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.2",
+    "prettier": "^2.8.4",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  }
+}

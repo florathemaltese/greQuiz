@@ -1,0 +1,102 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f6e9ea;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+    border-bottom: 0.0625rem solid #ddd;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+/* Form styles */
+.form {
+    margin-top: 1.25rem;
+    padding: 1.25rem;
+    background-color: #fff;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 0.625rem;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
+    margin-bottom: 1.25rem;
+}
+
+.form button {
+    background-color: #f48fb1;
+    color: #fff;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #ff7eb9;
+}
+
+/* List styles */
+ul {
+    list-style: none;
+    margin-top: 1.25rem;
+}
+
+li {
+    padding: 0.625rem;
+    background-color: #fff;
+    border: 0.0625rem solid #ddd;
+    border-radius: 0.3125rem;
+    margin-bottom: 0.625rem;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #fce8e9;
+}
+
+li a {
+    color: #333;
+    text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+    padding: 1.25rem 0;
+    border-top: 0.0625rem solid #ddd;
+    text-align: center;
+}
+
