@@ -1,0 +1,108 @@
+/* Body */
+body {
+  background-color: #89CFF0;
+}
+
+/* App */
+.App {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+/* Status */
+.status {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+/* Login form */
+.login {
+  border: 2px solid #00008B;
+  padding: 1rem;
+}
+
+.login__frame {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__button {
+  margin: 1rem auto;
+  max-width: 200px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: pink;
+  color: #00008B;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Word */
+.word {
+  display: grid;
+  grid-template-areas:
+    "greeting logout"
+    "content content";
+  grid-template-columns: 70% 30%;
+  border: 2px solid #00008B;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.word__greeting {
+  grid-area: greeting;
+  margin: 1rem auto;
+}
+
+.word__logoutbutton {
+  margin: 1rem auto;
+  max-width: 200px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: pink;
+  color: #00008B;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.word__display {
+  grid-area: content;
+  margin: 1rem auto;
+  background-color: pink;
+  color: #00008B;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.word__form-frame {
+  display: flex;
+  flex-direction: column;
+}
+
+.word__form-info {
+  margin: 1rem auto;
+}
+
+.word__form-input {
+  margin: auto;
+  max-width: 200px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 2px solid #00008B;
+}
+
+.word__form-submit {
+  margin: 1rem auto;
+  max-width: 200px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #89CFF0;
+  color: #00008B;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
