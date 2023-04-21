@@ -1,0 +1,221 @@
+body {
+  background-color: #FDCB82;
+  font-family: Arial, sans-serif;
+}
+
+
+.App {
+  position: relative;
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 1rem;
+}
+
+/* Define styles for the header h1 element */
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+  color: #555;
+  animation-name: scaleIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Define styles for the header p element */
+header p {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  color: #555;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+/* Define the scaleIn animation for the header h1 element */
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Define the fadeIn animation for the header p element */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.status {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2rem;
+  background-color: #E83B74;
+  border-radius: 0.25rem;
+  margin-top: -18.75rem;
+  transition: margin-top 0.5s ease-in-out;
+}
+
+.login__form label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.login__username {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.login__button {
+  padding: 0.5rem 1rem;
+  background-color: #FFB6C1;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.login__button:hover {
+  background-color: #FF8C00;
+  transform: scale(1.05);
+}
+
+.status__error {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFB6C1;
+  color: #FF8C00;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.word {
+  display: grid;
+  grid-template-areas:
+    "greeting logout"
+    "content content";
+  grid-template-columns: 70% 30%;
+  border: 0.125rem solid #FF8C00;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.word__greeting {
+  grid-area: greeting;
+  margin: 1rem auto;
+  color: #555;
+  font-size: 2rem;
+  animation: slideIn 1s ease forwards, colorChange 3s infinite;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes colorChange {
+  0%, 100% {
+    color: #555;
+  }
+  50% {
+    color: #ff0000;
+  }
+}
+
+
+
+.word__greeting:hover {
+  transform: scale(1.05);
+}
+
+.word__logoutbutton {
+  margin: 1rem auto;
+  max-width: 12.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #FFB6C1;
+  color: #FF8C00;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.word__logoutbutton:hover {
+  background-color: #FFD700;
+  color: white;
+}
+
+.word__display {
+  grid-area: content;
+  margin: 1rem auto;
+  background-color: #FFB6C1;
+  color: #FF8C00;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.word__form-frame {
+  display: flex;
+  flex-direction: column;
+}
+
+.word__form-info {
+  margin: 1rem auto;
+}
+
+.word__form-input {
+  margin: auto;
+  max-width: 12.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #FF8C00;
+  box-shadow: 0px 0px 5px #FF8C00;
+}
+
+.word__form-submit {
+  margin: 1rem auto;
+  max-width: 12.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #FDCB82;
+  color: #FF8C00;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,125 @@
+.container {
+    max-width: 37.5rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+    background-color: #FFD2E2;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    color: #F5426E;
+}
+
+.question-container:hover {
+    background-color: #FFF;
+    box-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.question-container {
+    margin-bottom: 1.25rem;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    color: #F5426E;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 0;
+    color: #666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.625rem;
+    color: #666;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+button:focus {
+    outline: 0.125rem solid #F5426E;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.625rem;
+    margin: 0 0.3125rem;
+    background-color: #F5426E;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 0.3125rem;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #FF7F9D;
+}
+
+.button.clicked {
+    background-color: #007BFF;
+    color: #FFF;
+}
+
+.result-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.result-container h2 {
+    font-size: 1.25rem;
+    color: #F5426E;
+}
+
+.result-container p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.result-container button {
+    margin-top: 0.625rem;
+    background-color: #F5426E;
+    color: #FFF;
+    border-radius: 0.3125rem;
+    outline: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.result-container button:hover {
+    background-color: #FF7F9D;
+}
+.clicked {
+    background-color: #FF7F9D;
+}
+
+.user-answer {
+    color: red;
+}
+
+.correct-answer {
+    color: green;
+}
+
+.question-question {
+    color: black;
+}
